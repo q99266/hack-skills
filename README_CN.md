@@ -84,7 +84,7 @@ npx skills add yaklang/hack-skills
 
 | 层级 | 作用 | 推荐暴露方式 | 代表 skill |
 |---|---|---|---|
-| 总入口 | 负责全局路由、测试顺序和跨类别切换 | 优先暴露 | [hack](./skills/hack/SKILL.md) |
+| 总入口 | 负责全局路由、作战纪律、测试顺序和跨类别切换 | 优先暴露 | [hack](./skills/hack/SKILL.md) |
 | 分类入口 | 负责按攻击面分流到稳定的专题族 | 优先暴露 | [recon-for-sec](./skills/recon-for-sec/SKILL.md), [api-sec](./skills/api-sec/SKILL.md), [auth-sec](./skills/auth-sec/SKILL.md) |
 | 深度专题 | 提供完整攻击手册和执行细节 | 按需加载 | [xss-cross-site-scripting](./skills/xss-cross-site-scripting/SKILL.md), [sqli-sql-injection](./skills/sqli-sql-injection/SKILL.md) |
 
@@ -92,7 +92,7 @@ npx skills add yaklang/hack-skills
 
 | 类型 | Skill | 用途 | 何时优先使用 |
 |---|---|---|---|
-| 总入口 | [hack](./skills/hack/SKILL.md) | 全局路由、阶段判断、跨类别切换 | 新目标、未知攻击面 |
+| 总入口 | [hack](./skills/hack/SKILL.md) | 全局路由、作战纪律、阶段判断、跨类别切换 | 新目标、未知攻击面、授权渗透 / 审计 / 泄露 / SOC 任务 |
 | 分类入口 | [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 资产发现、技术识别 | 刚接目标、信息不足 |
 | 分类入口 | [api-sec](./skills/api-sec/SKILL.md) | REST、GraphQL、移动端后端路由 | 看到 API 接口 |
 | 分类入口 | [auth-sec](./skills/auth-sec/SKILL.md) | 认证、会话、OAuth、JWT、授权 | 看到登录、令牌、对象 ID |
@@ -106,7 +106,7 @@ npx skills add yaklang/hack-skills
 
 | 技能 | SKILL.md | SCENARIOS.md | 核心内容 |
 |---|---|---|---|
-| [hack](./skills/hack/SKILL.md) | 161 行 | - | 总路由器、现象到技能的映射、专家直觉 |
+| [hack](./skills/hack/SKILL.md) | 256 行 | 895 行 | 质量闸门 + 路由器、影响力优先作战、测试矩阵、证据标准 |
 | [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 28 行 | - | 侦察阶段分类路由 |
 | [recon-and-methodology](./skills/recon-and-methodology/SKILL.md) | 389 行 | - | 方法论框架、Java 中间件指纹矩阵、泄露检测清单 |
 
