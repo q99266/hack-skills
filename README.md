@@ -84,7 +84,7 @@ After installing, the recommended order is simple: start from the master entry, 
 
 | Layer | Role | Recommended Exposure | Representative Skill |
 |---|---|---|---|
-| Master Entry | Global routing, test sequencing, cross-category switching | Expose first | [hack](./skills/hack/SKILL.md) |
+| Master Entry | Global routing, operating doctrine, test sequencing, cross-category switching | Expose first | [hack](./skills/hack/SKILL.md) |
 | Category Entry | Route by attack surface to stable topic families | Expose first | [recon-for-sec](./skills/recon-for-sec/SKILL.md), [api-sec](./skills/api-sec/SKILL.md), [auth-sec](./skills/auth-sec/SKILL.md) |
 | Deep Topic | Provide complete attack playbooks and execution details | Load on demand | [xss-cross-site-scripting](./skills/xss-cross-site-scripting/SKILL.md), [sqli-sql-injection](./skills/sqli-sql-injection/SKILL.md) |
 
@@ -92,7 +92,7 @@ After installing, the recommended order is simple: start from the master entry, 
 
 | Type | Skill | Purpose | When to Use First |
 |---|---|---|---|
-| Master Entry | [hack](./skills/hack/SKILL.md) | Global routing, phase assessment, cross-category switching | New target, unknown attack surface |
+| Master Entry | [hack](./skills/hack/SKILL.md) | Global routing, operating doctrine, phase assessment, cross-category switching | New target, unknown attack surface, authorized pentest / audit / leak / SOC task |
 | Category Entry | [recon-for-sec](./skills/recon-for-sec/SKILL.md) | Asset discovery, technology identification | Just received the target |
 | Category Entry | [api-sec](./skills/api-sec/SKILL.md) | REST, GraphQL, mobile backend routing | Observed API interfaces |
 | Category Entry | [auth-sec](./skills/auth-sec/SKILL.md) | Authentication, sessions, OAuth, JWT, authorization | Login, tokens, object IDs |
@@ -106,7 +106,7 @@ After installing, the recommended order is simple: start from the master entry, 
 
 | Skill | SKILL.md | SCENARIOS.md | Key Content |
 |---|---|---|---|
-| [hack](./skills/hack/SKILL.md) | 161 lines | - | Master router, phenomenon-to-skill mapping, expert intuitions |
+| [hack](./skills/hack/SKILL.md) | 256 lines | 895 lines | Quality gate + router, impact-first ops, test matrix, evidence standard |
 | [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 28 lines | - | Category router for reconnaissance phase |
 | [recon-and-methodology](./skills/recon-and-methodology/SKILL.md) | 389 lines | - | Methodology framework, Java middleware fingerprint matrix, leak detection checklist |
 
