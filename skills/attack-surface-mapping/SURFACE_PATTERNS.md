@@ -49,7 +49,7 @@ Use with `SKILL.md`. Each row is a field shape. Recognize it, write down where t
 |---|---|---|
 | Same title, skeleton, build hash, API prefix, login chain | 2–3 representatives. Siblings: only new path / port / app / `jump`/`service=`/`moduleId` plane | Full matrix on every mirror |
 | Business paths extracted; unauth exceptions probed; remaining endpoints share one login-code family | Auth endpoints if present (session / reset / rebind / ticket-swap). Siblings: glance for new path or code change | Quotes on "please log in"; a new thread per leftover host |
-| 403 + no business script + default server page | One-shot falsify, mark thin | 15 minutes of injection on the empty shell |
+| 403 + no business script + default server page | One-shot falsify; no business plane | Padding with a full injection matrix on the empty shell |
 
 ## Docs, debug, storage — only if this app already pointed here
 

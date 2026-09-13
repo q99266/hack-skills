@@ -108,7 +108,7 @@ npx skills add yaklang/hack-skills
 |---|---|---|---|
 | [hack](./skills/hack/SKILL.md) | 248 行 | 895 行 | 质量闸门 + 路由器、影响力优先作战、测试矩阵、证据标准 |
 | [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 30 行 | - | 侦察阶段分类路由 |
-| [attack-surface-mapping](./skills/attack-surface-mapping/SKILL.md) | 199 行 | 60 行 | 从单一应用画出 host/API/钥匙/对象图；登录页是壳 |
+| [attack-surface-mapping](./skills/attack-surface-mapping/SKILL.md) | 194 行 | 60 行 | 从单一应用画出 host/API/钥匙/对象图；登录页是壳 |
 | [recon-and-methodology](./skills/recon-and-methodology/SKILL.md) | 389 行 | - | 方法论框架、Java 中间件指纹矩阵、泄露检测清单 |
 
 ### API 安全

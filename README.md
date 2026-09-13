@@ -108,7 +108,7 @@ After installing, the recommended order is simple: start from the master entry, 
 |---|---|---|---|
 | [hack](./skills/hack/SKILL.md) | 248 lines | 895 lines | Quality gate + router, impact-first ops, test matrix, evidence standard |
 | [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 30 lines | - | Category router for reconnaissance phase |
-| [attack-surface-mapping](./skills/attack-surface-mapping/SKILL.md) | 199 lines | 60 lines | Draw hosts/APIs/keys/object graph from one app; login is a shell |
+| [attack-surface-mapping](./skills/attack-surface-mapping/SKILL.md) | 194 lines | 60 lines | Draw hosts/APIs/keys/object graph from one app; login is a shell |
 | [recon-and-methodology](./skills/recon-and-methodology/SKILL.md) | 389 lines | - | Methodology framework, Java middleware fingerprint matrix, leak detection checklist |
 
 ### API Security

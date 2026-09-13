@@ -27,20 +27,20 @@ Do **not** use this skill to expand an organization-wide host universe. Map the 
 
 Authorization and destruction bounds: [hack](../hack/SKILL.md) start gate. Stay in scope.
 
-## Deliverable
+## What must exist (not a file tree)
 
-Write these before any vulnerability skill:
+Before any vulnerability skill, these facts must be retrievable. Persist them in whatever the local workspace already uses for notes and evidence — an existing task folder, a proxy project, session notes, a ticket. Do not invent a new directory layout when one is already in play.
 
-| File | Contents |
+| Fact | Keep |
 |---|---|
-| `assets/<host>/portrait.md` | 3–5 sentences, not an essay |
-| `assets/<host>/hosts.md` | Business hosts, gateways, API domains this app already named |
-| `assets/<host>/endpoints.md` | Method, path, params, auth required? |
-| `assets/<host>/keys.md` | Signing salt, ciphertext id + frontend pubkey, hidden/admin route, hardcoded demo account. Write `none` per row if absent |
-| `assets/<host>/response-class.md` | Login-gate / differential / unauthenticated exception |
-| `assets/<host>/object-graph.md` | list → detail → attachment / export / approval |
+| Portrait | 3–5 sentences, not an essay |
+| Hosts | Business hosts, gateways, API domains this app already named |
+| Endpoints | Method, path, params, auth required? |
+| Keys | Signing salt, ciphertext id + frontend pubkey, hidden/admin route, hardcoded demo account. Record `none` per row if absent |
+| Response class | Login-gate / differential / unauthenticated exception |
+| Object graph | list → detail → attachment / export / approval |
 
-Empty inventory plus "I will brute paths next" is a failed mapping.
+Requests, diffs, and screenshots stay where they were captured when that store is already the working set. Empty inventory plus "I will brute paths next" is a failed mapping.
 
 ## Fast path
 
@@ -51,7 +51,6 @@ Portrait
   → classify responses
   → grow the object graph from responses
   → same-skin / same-gate collapse
-  → fat vs thin
   → surface-done → hand off
 ```
 
@@ -96,7 +95,7 @@ Form checks that are in-scope for mapping (once, then stop): empty password, ski
 
 ### 3. Inventory from the application
 
-**Frontend present:** open a business page → collect scripts (including async chunks and sourcemaps) → extract APIs **and keys** → capture traffic to fill gaps → write `endpoints.md` + `keys.md`.
+**Frontend present:** open a business page → collect scripts (including async chunks and sourcemaps) → extract APIs **and keys** → capture traffic to fill gaps → persist endpoints and keys in the local evidence store.
 
 JS extracts more than `/api/` paths. For each row, write the value or `none`:
 
@@ -155,21 +154,16 @@ Then stop this gate. Siblings with the same `baseURL` + same code: glance for ne
 
 Same host is not same-skin. Extra paths on the same host always expand.
 
-### 7. Fat vs thin
+No business script, default server page, or leftover behind the same login-code family: falsify once and leave. Do not pad with a full matrix.
 
-| Fat — finish the graph | Thin — one-shot falsify |
-|---|---|
-| Many scripts, admin, business JSON, gateway | 403 empty, no business script, default server page, same-gate leftover |
-| Still extracting chunks, restoring sign, writing the portrait | Do not pad time with a full matrix |
-
-### 8. Surface-done (then hand off)
+### 7. Surface-done (then hand off)
 
 Mapping is done when:
 
 1. Portrait exists, or this is recorded as a shell with no business object
-2. `endpoints.md` exists (full or degraded); `keys.md` has values or `none`
+2. Endpoint inventory exists (full or degraded); keys have values or `none` — in the local evidence store, not a prescribed path
 3. Response classes labeled; unauthenticated exceptions ticked
-4. Object graph written, or recorded as unlistable
+4. Object graph recorded, or recorded as unlistable
 5. Same-skin / same-gate leftovers glanced, not rematrixed
 6. Auth endpoints listed if the inventory has issue-session / reset / rebind / ticket-swap / 2FA — listed, not yet exploited
 
@@ -197,3 +191,4 @@ Then load [hack](../hack/SKILL.md) for effort order and the matching category sk
 - Pouring a full matrix into the same login-code family
 - Expanding to a new cluster while this application's live surface is unfinished
 - Calling mapping "done" because the homepage returned 200
+- Minting a new notes tree when the workspace or proxy project already holds the evidence
