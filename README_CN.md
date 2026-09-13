@@ -8,7 +8,7 @@
 
 <p align="center">
     <strong>总入口 → 分类入口 → 深度专题技能</strong><br/>
-    一个总入口，六个稳定分类入口，以及横跨 <strong>14 个安全领域</strong> 的 <strong>101</strong> 个按需下钻的深度专题技能。
+    一个总入口，六个稳定分类入口，以及横跨 <strong>14 个安全领域</strong> 的 <strong>102</strong> 个按需下钻的深度专题技能。
 </p>
 
 这是一个面向 Agent 的安全技能知识库，覆盖 Web 安全、API 安全、认证与授权、操作系统提权（Linux/Windows/macOS）、Active Directory 攻击、移动安全、二进制漏洞利用（Pwn）、逆向工程、密码学攻击、区块链与智能合约安全、AI/ML 与 LLM 安全、网络协议与横向移动、数字取证——服务于漏洞赏金、渗透测试、CTF 竞赛和授权安全研究。
@@ -100,14 +100,15 @@ npx skills add yaklang/hack-skills
 | 分类入口 | [file-access-vuln](./skills/file-access-vuln/SKILL.md) | 上传、下载、LFI、路径控制 | 文件操作 |
 | 分类入口 | [business-logic-vuln](./skills/business-logic-vuln/SKILL.md) | 竞态、价格、流程、状态机 | 业务流程测试 |
 
-## 完整技能索引（101 个技能）
+## 完整技能索引（102 个技能）
 
 ### 侦察与方法论
 
 | 技能 | SKILL.md | SCENARIOS.md | 核心内容 |
 |---|---|---|---|
-| [hack](./skills/hack/SKILL.md) | 256 行 | 895 行 | 质量闸门 + 路由器、影响力优先作战、测试矩阵、证据标准 |
-| [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 28 行 | - | 侦察阶段分类路由 |
+| [hack](./skills/hack/SKILL.md) | 248 行 | 895 行 | 质量闸门 + 路由器、影响力优先作战、测试矩阵、证据标准 |
+| [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 30 行 | - | 侦察阶段分类路由 |
+| [attack-surface-mapping](./skills/attack-surface-mapping/SKILL.md) | 194 行 | 60 行 | 从单一应用画出 host/API/钥匙/对象图；登录页是壳 |
 | [recon-and-methodology](./skills/recon-and-methodology/SKILL.md) | 389 行 | - | 方法论框架、Java 中间件指纹矩阵、泄露检测清单 |
 
 ### API 安全

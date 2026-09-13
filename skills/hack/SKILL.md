@@ -85,18 +85,9 @@ When a task crosses red and blue, freeze evidence for the current phase before s
 
 ## 3. Operating Model
 
-### Step 1: Portrait, then inventory
+### Step 1: Draw the surface from the application
 
-Write 3–5 sentences, not an essay: who uses this, what the core objects are, which fields hold money/power/state, what an unauthenticated caller can already touch. If that is unclear, capture traffic first. Do not scan into a blank portrait.
-
-Then inventory more than paths: signing salts, ciphertext identifiers, hidden routes, hardcoded demo accounts. Write "none" if absent. If scripts will not download, use captured traffic and inline page content. Username/password boxes are not business parameters; extra tenant/module fields on the login API are.
-
-Collect:
-
-- Target type: classic web, REST API, mobile backend, admin, payment, upload, GraphQL
-- Identity model: anonymous, user, admin, multi-tenant
-- Inputs: URL, query, JSON, headers, cookies, filenames, imports, templates, reflection points
-- Outputs: HTML, attributes, JS, PDF, email, logs, jobs, mobile endpoints
+With a URL or an application in hand, map the surface first: [attack-surface-mapping](../attack-surface-mapping/SKILL.md). Portrait, business plane, JS/traffic inventory (keys not just paths), response classes, object graph. Do not scan into a blank portrait. Do not open with directory brute or payload spray.
 
 ### Step 2: Route by observed behavior
 
@@ -144,7 +135,7 @@ Full pass/fail rules: [TEST_MATRIX.md](./TEST_MATRIX.md). Default order:
 
 A full "please log in" with no business fields is not an injection surface. Empty list, error, and timeout are not "please log in".
 
-Finish the current asset cluster before expanding. A login page is a shell — find the post-login business host / gateway; do not grind captcha walls.
+Finish the current asset cluster before expanding.
 
 ### R1. Impact, not compliance
 
@@ -178,7 +169,7 @@ Success is shorter dwell time, not close-rate. Details: [BLUE_TEAM.md](./BLUE_TE
 
 If the full repository is present, prefer these together. Previously separate mini skills (payload-selection, brute-selection) were merged back into their main skills.
 
-- [Recon and Methodology](../recon-and-methodology/SKILL.md)
+- [Attack Surface Mapping](../attack-surface-mapping/SKILL.md) · [Recon and Methodology](../recon-and-methodology/SKILL.md)
 - [XSS](../xss-cross-site-scripting/SKILL.md) · [SQLi](../sqli-sql-injection/SKILL.md) · [SSRF](../ssrf-server-side-request-forgery/SKILL.md) · [XXE](../xxe-xml-external-entity/SKILL.md) · [SSTI](../ssti-server-side-template-injection/SKILL.md)
 - [IDOR](../idor-broken-object-authorization/SKILL.md) · [CMDi](../cmdi-command-injection/SKILL.md) · [Path Traversal / LFI](../path-traversal-lfi/SKILL.md) · [CSRF](../csrf-cross-site-request-forgery/SKILL.md)
 - [API Security Router](../api-sec/SKILL.md) · [JWT / OAuth](../jwt-oauth-token-attacks/SKILL.md) · [OAuth / OIDC](../oauth-oidc-misconfiguration/SKILL.md) · [SAML](../saml-sso-assertion-attacks/SKILL.md) · [Auth Bypass](../authbypass-authentication-flaws/SKILL.md)
@@ -232,6 +223,7 @@ Two gates before a finding is "confirmed":
 
 ## Suggested Prompts
 
+- "I only have this URL; draw the attack surface from the application before testing."
 - "Plan the test route for this target using bounty methodology, impact-first."
 - "This is a REST API; prioritize BOLA, BFLA, mass assignment, and JWT."
 - "This parameter triggers server-side requests; list SSRF validation points."
