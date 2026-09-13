@@ -19,6 +19,7 @@ categories:
     skills:
       - hack
       - recon-for-sec
+      - attack-surface-mapping
       - recon-and-methodology
 
   - id: api

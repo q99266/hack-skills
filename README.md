@@ -8,7 +8,7 @@
 
 <p align="center">
     <strong>Master Entry → Category Entries → Deep Topic Skills</strong><br/>
-    One master entry, six category entries, and <strong>101</strong> deep topic skills across <strong>14 security domains</strong>.
+    One master entry, six category entries, and <strong>102</strong> deep topic skills across <strong>14 security domains</strong>.
 </p>
 
 An Agent Skills knowledge base covering web security, API security, authentication & authorization, OS privilege escalation (Linux/Windows/macOS), Active Directory attacks, mobile security, binary exploitation (Pwn), reverse engineering, cryptography attacks, blockchain & smart contract security, AI/ML & LLM security, network protocols & pivoting, and digital forensics — built for bug bounty, penetration testing, CTF competitions, and authorized security research.
@@ -100,14 +100,15 @@ After installing, the recommended order is simple: start from the master entry, 
 | Category Entry | [file-access-vuln](./skills/file-access-vuln/SKILL.md) | Upload, download, LFI, path control | File operations |
 | Category Entry | [business-logic-vuln](./skills/business-logic-vuln/SKILL.md) | Race conditions, pricing, workflow, state machines | Business process testing |
 
-## Complete Skill Index (101 Skills)
+## Complete Skill Index (102 Skills)
 
 ### Reconnaissance & Methodology
 
 | Skill | SKILL.md | SCENARIOS.md | Key Content |
 |---|---|---|---|
-| [hack](./skills/hack/SKILL.md) | 256 lines | 895 lines | Quality gate + router, impact-first ops, test matrix, evidence standard |
-| [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 28 lines | - | Category router for reconnaissance phase |
+| [hack](./skills/hack/SKILL.md) | 248 lines | 895 lines | Quality gate + router, impact-first ops, test matrix, evidence standard |
+| [recon-for-sec](./skills/recon-for-sec/SKILL.md) | 30 lines | - | Category router for reconnaissance phase |
+| [attack-surface-mapping](./skills/attack-surface-mapping/SKILL.md) | 199 lines | 60 lines | Draw hosts/APIs/keys/object graph from one app; login is a shell |
 | [recon-and-methodology](./skills/recon-and-methodology/SKILL.md) | 389 lines | - | Methodology framework, Java middleware fingerprint matrix, leak detection checklist |
 
 ### API Security
